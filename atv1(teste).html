@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
+<html>
+ <head>
+    <body>
+        <h1>Programa Situação da turma</h1>
+         <hr>
+  <p> Nome Aluno(a):<input type="text"> </p>
+   <p> Primeira nota <input id="nota1" type="number"> </p>
+   <p> Segunda  nota <input id="nota2" type="number"> </p>
+   <p> <button onclick="media()">Exibir média Aluno</button>  <button>Exibir média da turma</button> </p>
+
+   <script>
+
+    function media(){
+     var nota1 = parseFloat(document.getElementById("nota1").value);
+     var nota2 = parseFloat(document.getElementById("nota2").value);
+
+     var media = (nota1 + nota2)/2 ;
+
+     if(media >= 7)
+       alert("Você foi aprovado(a)Aprovado"+media);
+     else
+      alert("Você foi reprovado")
+
+    }
+ </script>
+  
+    
+  </body>
+ </head>
+</html>
